@@ -1,0 +1,71 @@
+.container {
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-gap: 10px;
+    grid-auto-rows: 200px;
+    grid-template-areas:
+    ". . . . . -"
+    ". a a a a ."
+    ". a a a a ."
+    ". a a a a ."
+    ". . . . . ."
+    ". . . . . .";
+}
+
+.box {
+    grid-area: a;
+    background: black;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+    "x x b y"
+    "x x b y"
+    "x x c d"
+    "x x e f";
+}
+
+div .item1:hover{
+    background-color: yellow;
+    height: 95%;
+}
+
+.item1 {
+    grid-area: x;
+    background: pink;
+    height: 100%;
+    grid: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.item2 {
+    grid-area: b;
+    background:lavender;
+}
+
+.item3 {
+    grid-area: y;
+    background: green;
+}
+
+.item4 {
+    grid-area: c;
+    background: blue;
+}
+
+.item5{
+    grid-area: d;
+    background: red;
+}
+
+.item6{
+    grid-area: e;
+    background: brown;
+}
+
+.item7{
+    grid-area: f;
+    background: purple;
+}
