@@ -15,7 +15,7 @@
 
 .box {
     grid-area: a;
-    background: black;
+    background:inherit;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-areas:
@@ -25,12 +25,13 @@
     "x x e f";
 }
 
-div .item1:hover{
-    background-color: yellow;
-    height: 95%;
+div .item:hover{
+    background: rgb(255, 255, 0) !important;
+    transform: scale(0.98);
+    transition: all 1s;
 }
 
-.item1 {
+#item1 {
     grid-area: x;
     background: pink;
     height: 100%;
@@ -40,32 +41,32 @@ div .item1:hover{
 }
 
 
-.item2 {
+#item2 {
     grid-area: b;
     background:lavender;
 }
 
-.item3 {
+#item3 {
     grid-area: y;
     background: green;
 }
 
-.item4 {
+#item4 {
     grid-area: c;
     background: blue;
 }
 
-.item5{
+#item5{
     grid-area: d;
     background: red;
 }
 
-.item6{
+#item6{
     grid-area: e;
     background: brown;
 }
 
-.item7{
+#item7{
     grid-area: f;
     background: purple;
 }
